@@ -1,0 +1,18 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm ci  # 依存関係のクリーンインストール
+    build:
+      commands:
+        - npm run build # React(Vite)のビルドコマンド
+  artifacts:
+    # Viteのデフォルト出力先は 'dist' です
+    # 設定で変えている場合はそこに合わせてください
+    baseDirectory: dist
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
