@@ -3,13 +3,14 @@ frontend:
   phases:
     preBuild:
       commands:
-        - npm ci  # 依存関係のクリーンインストール
+        - npm ci
     build:
       commands:
-        - npm run build # React(Vite)のビルドコマンド
+        - npm run build
+        - echo "=== BUILD CHECK START ==="  # 目印
+        - ls -R dist                        # distフォルダの中身を全部ログに出す
+        - echo "=== BUILD CHECK END ==="    # 目印
   artifacts:
-    # Viteのデフォルト出力先は 'dist' です
-    # 設定で変えている場合はそこに合わせてください
     baseDirectory: dist
     files:
       - '**/*'
