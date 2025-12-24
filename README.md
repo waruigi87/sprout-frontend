@@ -190,7 +190,3 @@ npm run dev
 * **Weekly ToDo:** 毎週月曜日に今週分のToDoリストを自動生成。
 
 ---
-
-## 📜 License
-
-This project is licensed under the MIT License.
