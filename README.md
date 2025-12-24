@@ -29,7 +29,7 @@ graph TD
         Hub -->|Internet| SwitchBotAPI[SwitchBot Cloud API]
     end
 
-    subgraph Backend [Backend (Lolipop)]
+    subgraph Backend [Backend - Lolipop]
         Laravel[Laravel API]
         MySQL[(MySQL DB)]
         Cron[Cron Job]
@@ -39,7 +39,7 @@ graph TD
         Laravel -->|Polling| SwitchBotAPI
     end
 
-    subgraph Frontend [Frontend (AWS Amplify)]
+    subgraph Frontend [Frontend - AWS Amplify]
         ReactApp[React PWA]
     end
 
