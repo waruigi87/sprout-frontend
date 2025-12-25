@@ -20,7 +20,7 @@
   <tr>
     <td align="center" width="33%">
       <img src="https://github.com/user-attachments/assets/7cd7638a-8e96-4ce3-a3e7-0a291aa098ae" width="100%"><br>
-      <sub>ダッシュボード>ダッシュ>
+      <sub>ダッシュボード</sub>
     </td>
     <td align="center" width="33%">
       <img src="https://github.com/user-attachments/assets/c6fd13fb-3363-4d23-ac8e-bbe440879c6b" width="100%"><br>
@@ -53,6 +53,10 @@
     <td align="center">
       <img src="https://github.com/user-attachments/assets/29a81811-cfaf-4943-86ca-3023af760cc0" width="100%"><br>
       <sub>ログイン>ログイン>
+    </td>
+    <td align="center">
+       <img width="1607" height="700" alt="Image" src="https://github.com/user-attachments/assets/6f855530-ece0-4cc9-959b-cd8b085d5f66" />
+      <sub>管理者ページ</sub>
     </td>
     <td></td> </tr>
 </table>
