@@ -16,53 +16,46 @@
 ---
 
 ## 📸 Demo / 画面イメージ
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/7cd7638a-8e96-4ce3-a3e7-0a291aa098ae" width="80%">
-  <br>
-  <b>1. タイトル：学校向け水耕栽培管理アプリ SPROUT</b>
-</p>
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/c6fd13fb-3363-4d23-ac8e-bbe440879c6b" width="80%">
-  <br>
-  <b>2. 課題設定：自動化が抱える教育的ロス</b>
-</p>
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/5696919b-b1ef-4f29-9a35-5180025538e6" width="80%">
-  <br>
-  <b>3. 解決の仮説：テクノロジーで関心を再接続する</b>
-</p>
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/61e4ee5d-90d3-4d57-a4af-898b309eea19" width="80%">
-  <br>
-  <b>4. システムアーキテクチャ：24時間監視の仕組み</b>
-</p>
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/526c89ea-1270-449b-9af2-9c97750b9388" width="80%">
-  <br>
-  <b>5. 学習システム：科学を遊びに変えるクイズロジック</b>
-</p>
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/51d6ed91-c827-43e1-9dba-395ea60fb6c9" width="80%">
-  <br>
-  <b>6. デモンストレーション：実稼働中の管理画面</b>
-</p>
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/ad3308d7-42d7-4731-a731-ed5394240ade" width="80%">
-  <br>
-  <b>7. 今後の展望：さらなる可視化とAI予測</b>
-</p>
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/29a81811-cfaf-4943-86ca-3023af760cc0" width="80%">
-  <br>
-  <b>8. まとめ：深く知るための自動化へ</b>
-</p>
+<table table-layout="fixed" width="100%">
+  <tr>
+    <td align="center" width="33%">
+      <img src="https://github.com/user-attachments/assets/7cd7638a-8e96-4ce3-a3e7-0a291aa098ae" width="100%"><br>
+      <sub>1. タイトル：SPROUT</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="https://github.com/user-attachments/assets/c6fd13fb-3363-4d23-ac8e-bbe440879c6b" width="100%"><br>
+      <sub>2. 課題：教育的ロス</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="https://github.com/user-attachments/assets/5696919b-b1ef-4f29-9a35-5180025538e6" width="100%"><br>
+      <sub>3. 仮説：関心の再接続</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/61e4ee5d-90d3-4d57-a4af-898b309eea19" width="100%"><br>
+      <sub>4. システム構成</sub>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/526c89ea-1270-449b-9af2-9c97750b9388" width="100%"><br>
+      <sub>5. 学習ロジック</sub>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/51d6ed91-c827-43e1-9dba-395ea60fb6c9" width="100%"><br>
+      <sub>6. デモ画面</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/ad3308d7-42d7-4731-a731-ed5394240ade" width="100%"><br>
+      <sub>7. 今後の展望</sub>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/29a81811-cfaf-4943-86ca-3023af760cc0" width="100%"><br>
+      <sub>8. まとめ</sub>
+    </td>
+    <td></td> </tr>
+</table>
 
 ## 🛠 使用技術 (Tech Stack)
 
