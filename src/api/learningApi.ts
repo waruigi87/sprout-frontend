@@ -12,13 +12,18 @@ export interface Quiz {
 
 export interface TodayQuizResponse {
   has_quiz: boolean;
-  quiz?: Quiz; 
+  message?: string;
+  quiz?: Quiz;
+  is_point_eligible?: boolean;    // ★追加: ポイント獲得可能か
+  remaining_point_chances?: number; // ★追加: 残りポイント獲得回数
 }
 
 export interface QuizAnswerResponse {
   is_correct: boolean;
-  correct_answer_index: number | null; // 不正解時にnullが返る可能性があるためnull許容にする
+  correct_answer_index: number | null;
   explanation: string;
+  points_earned: number;          // ★追加: 今回獲得したポイント
+  remaining_point_chances: number;
 }
 
 // --- API呼び出し関数 ---

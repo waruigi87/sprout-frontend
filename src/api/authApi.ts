@@ -1,8 +1,10 @@
 import client from './client';
 
 // レスポンスの型定義 (Laravelの返却値に合わせる)
+// レスポンスの型定義を修正（roleを追加）
 export interface ClassLoginResponse {
   token: string;
+  role: string; // ★追加: 'student' | 'guest'
   class: {
     id: number;
     name: string;

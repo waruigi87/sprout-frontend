@@ -68,8 +68,9 @@ export const dashboardApi = {
   },
 
   // ToDoのチェック状態更新
-  updateTodoStatus: async (classId: number, todoId: number, isCompleted: boolean): Promise<TodoItem> => {
-    const response = await client.patch(`/classes/${classId}/todos/${todoId}`, {
+    updateTodoStatus: async (classId: number, todoId: number, isCompleted: boolean): Promise<TodoItem> => {
+    // client.patch を client.post に変更
+    const response = await client.post(`/classes/${classId}/todos/${todoId}`, {
       is_completed: isCompleted,
     });
     return response.data;

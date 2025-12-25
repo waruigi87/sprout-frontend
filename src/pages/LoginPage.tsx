@@ -24,13 +24,18 @@ export const LoginPage: React.FC = () => {
 
     try {
       if (mode === 'class') {
-        // --- クラスコードログイン ---
+        // --- クラスコードログイン（生徒・ゲスト共通） ---
         const data = await authApi.login(formData.classCode);
 
+        // トークン保存
         localStorage.setItem('auth_token', data.token); 
         localStorage.setItem('userType', 'class');
         
-        // クラス情報は userInfo として保存（Dashboardで使用）
+        // ★重要: サーバーから返却された権限(student or guest)を保存
+        // これによりダッシュボード側で「閲覧モード」にするか判定します
+        localStorage.setItem('user_role', data.role); 
+        
+        // クラス情報は userInfo として保存
         localStorage.setItem('userInfo', JSON.stringify(data.class));
         
         navigate(`/classes/${data.class.id}/dashboard`);
@@ -42,13 +47,15 @@ export const LoginPage: React.FC = () => {
         localStorage.setItem('auth_token', data.token);
         localStorage.setItem('userType', 'admin');
         
-        // ▼▼▼ 修正: adminApiに合わせて 'adminInfo' というキーで保存します ▼▼▼
+        // 管理者情報を保存
         localStorage.setItem('adminInfo', JSON.stringify(data.admin));
         
         navigate('/admin');
       }
     } catch (err) {
+      console.error(err);
       if (err instanceof AxiosError && err.response) {
+        // APIから返ってきたエラーメッセージを表示
         const data = err.response.data as { message?: string };
         setError(data.message || 'ログインに失敗しました。入力内容を確認してください。');
       } else {
@@ -71,7 +78,6 @@ export const LoginPage: React.FC = () => {
     setFormData({ classCode: '', email: '', password: '' });
   };
 
-  // --- UI部分は変更なし ---
   return (
     <div className="fixed inset-0 w-screen h-screen bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center overflow-hidden">
       <form 
@@ -100,7 +106,7 @@ export const LoginPage: React.FC = () => {
 
             {error && (
               <div className="mb-4 p-3 bg-red-50 border border-red-200 rounded-lg">
-                <p className="text-red-600 text-sm font-medium">バリデーションエラー</p>
+                <p className="text-red-600 text-sm font-medium">ログインエラー</p>
                 <p className="text-red-500 text-xs mt-1">{error}</p>
               </div>
             )}

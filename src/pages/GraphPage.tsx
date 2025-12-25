@@ -11,12 +11,12 @@ import {
   ResponsiveContainer 
 } from 'recharts';
 import { ArrowLeft, AlertTriangle } from 'lucide-react';
-import { AxiosError } from 'axios'; // ★追加: エラー型用
+import { AxiosError } from 'axios';
 
 // APIと型定義をインポート
 import { dashboardApi, type GraphDataPoint } from '../api/dashboardApi';
 
-// 現在の環境表示用の型 (DashboardResponseの一部を利用)
+// 現在の環境表示用の型
 interface CurrentEnvironment {
   temperature: {
     value: number | null;
@@ -51,9 +51,25 @@ export const GraphPage: React.FC = () => {
       // 1. グラフデータの取得
       const graphRes = await dashboardApi.fetchGraphs(currentClassId, '24h');
       
-      // 未来のデータを除外するフィルタリング処理
+      // 現在時刻を取得
       const now = new Date();
-      const validGraphData = graphRes.data.filter(point => {
+
+      // ★修正ポイント: 取得したデータの日時に9時間を足す処理
+      const adjustedData = graphRes.data.map(point => {
+        const date = new Date(point.recorded_at);
+        // イギリス時間(UTC)などから日本時間(JST)へ変換するために9時間加算
+        date.setHours(date.getHours() + 9);
+        
+        return {
+          ...point,
+          // Rechartsで扱いやすいようにISO文字列に戻して保存
+          recorded_at: date.toISOString()
+        };
+      });
+
+      // 未来のデータを除外するフィルタリング処理
+      // (9時間足した後の時間で判定します)
+      const validGraphData = adjustedData.filter(point => {
         const recordDate = new Date(point.recorded_at);
         return recordDate <= now;
       });
@@ -71,7 +87,6 @@ export const GraphPage: React.FC = () => {
       console.error('データ取得エラー:', err);
       setError('データの取得に失敗しました');
       
-      // ★修正: anyを使わずAxiosErrorで型判定
       if (err instanceof AxiosError && err.response?.status === 401) {
         navigate('/login');
       }
@@ -84,14 +99,27 @@ export const GraphPage: React.FC = () => {
     fetchAllData();
   }, [fetchAllData]);
 
-  // 時刻フォーマット (YYYY-MM-DD HH:MM:SS -> HH:MM)
+  // 時刻フォーマット (X軸用: HH:MM)
   const formatTime = (dateString: string) => {
     try {
       const date = new Date(dateString);
       return `${date.getHours().toString().padStart(2, '0')}:${date.getMinutes().toString().padStart(2, '0')}`;
     } catch { 
-      // ★修正: 使わない引数 (e) を削除
       return '--:--';
+    }
+  };
+
+  // ツールチップ用の詳細日時フォーマット (MM/DD HH:MM)
+  const formatTooltipDate = (dateString: string) => {
+    try {
+      const date = new Date(dateString);
+      const month = date.getMonth() + 1;
+      const day = date.getDate();
+      const hours = date.getHours().toString().padStart(2, '0');
+      const minutes = date.getMinutes().toString().padStart(2, '0');
+      return `${month}/${day} ${hours}:${minutes}`;
+    } catch {
+      return dateString;
     }
   };
 
@@ -253,7 +281,8 @@ export const GraphPage: React.FC = () => {
                       if (value === undefined || value === null) return ['--', chartConfig.label];
                       return [`${Number(value).toFixed(1)} ${chartConfig.unit}`, chartConfig.label];
                     }}
-                    labelFormatter={(label) => `日時: ${label}`}
+                    // ★修正: ツールチップの日時も9時間足した状態で表示
+                    labelFormatter={(label) => `日時: ${formatTooltipDate(label as string)}`}
                     contentStyle={{ 
                       backgroundColor: 'rgba(255, 255, 255, 0.95)', 
                       border: '1px solid #e5e7eb',
