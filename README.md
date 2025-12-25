@@ -20,39 +20,39 @@
   <tr>
     <td align="center" width="33%">
       <img src="https://github.com/user-attachments/assets/7cd7638a-8e96-4ce3-a3e7-0a291aa098ae" width="100%"><br>
-      <sub>1. タイトル：SPROUT</sub>
+      <sub>ダッシュボード>ダッシュ>
     </td>
     <td align="center" width="33%">
       <img src="https://github.com/user-attachments/assets/c6fd13fb-3363-4d23-ac8e-bbe440879c6b" width="100%"><br>
-      <sub>2. 課題：教育的ロス</sub>
+      <sub> 今日のTodo </sub>
     </td>
     <td align="center" width="33%">
       <img src="https://github.com/user-attachments/assets/5696919b-b1ef-4f29-9a35-5180025538e6" width="100%"><br>
-      <sub>3. 仮説：関心の再接続</sub>
+      <sub> バッジ表示 </sub>
     </td>
   </tr>
   <tr>
     <td align="center">
       <img src="https://github.com/user-attachments/assets/61e4ee5d-90d3-4d57-a4af-898b309eea19" width="100%"><br>
-      <sub>4. システム構成</sub>
+      <sub>　クイズ </sub>
     </td>
     <td align="center">
       <img src="https://github.com/user-attachments/assets/526c89ea-1270-449b-9af2-9c97750b9388" width="100%"><br>
-      <sub>5. 学習ロジック</sub>
+      <sub>クイズ</sub>
     </td>
     <td align="center">
       <img src="https://github.com/user-attachments/assets/51d6ed91-c827-43e1-9dba-395ea60fb6c9" width="100%"><br>
-      <sub>6. デモ画面</sub>
+      <sub>クイズ- 正解</sub>
     </td>
   </tr>
   <tr>
     <td align="center">
       <img src="https://github.com/user-attachments/assets/ad3308d7-42d7-4731-a731-ed5394240ade" width="100%"><br>
-      <sub>7. 今後の展望</sub>
+      <sub>クイズ</sub>
     </td>
     <td align="center">
       <img src="https://github.com/user-attachments/assets/29a81811-cfaf-4943-86ca-3023af760cc0" width="100%"><br>
-      <sub>8. まとめ</sub>
+      <sub>ログイン>ログイン>
     </td>
     <td></td> </tr>
 </table>
