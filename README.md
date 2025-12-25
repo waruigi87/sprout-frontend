@@ -16,14 +16,53 @@
 ---
 
 ## 📸 Demo / 画面イメージ
-<img width="1285" height="816" alt="Image" src="https://github.com/user-attachments/assets/7cd7638a-8e96-4ce3-a3e7-0a291aa098ae" />
-<img width="1121" height="813" alt="Image" src="https://github.com/user-attachments/assets/c6fd13fb-3363-4d23-ac8e-bbe440879c6b" />
-<img width="1124" height="810" alt="Image" src="https://github.com/user-attachments/assets/5696919b-b1ef-4f29-9a35-5180025538e6" />
-<img width="1127" height="815" alt="Image" src="https://github.com/user-attachments/assets/61e4ee5d-90d3-4d57-a4af-898b309eea19" />
-<img width="1116" height="811" alt="Image" src="https://github.com/user-attachments/assets/526c89ea-1270-449b-9af2-9c97750b9388" />
-<img width="1124" height="818" alt="Image" src="https://github.com/user-attachments/assets/51d6ed91-c827-43e1-9dba-395ea60fb6c9" />
-<img width="1125" height="805" alt="Image" src="https://github.com/user-attachments/assets/ad3308d7-42d7-4731-a731-ed5394240ade" />
-<img width="1108" height="811" alt="Image" src="https://github.com/user-attachments/assets/29a81811-cfaf-4943-86ca-3023af760cc0" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7cd7638a-8e96-4ce3-a3e7-0a291aa098ae" width="80%">
+  <br>
+  <b>1. タイトル：学校向け水耕栽培管理アプリ SPROUT</b>
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c6fd13fb-3363-4d23-ac8e-bbe440879c6b" width="80%">
+  <br>
+  <b>2. 課題設定：自動化が抱える教育的ロス</b>
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/5696919b-b1ef-4f29-9a35-5180025538e6" width="80%">
+  <br>
+  <b>3. 解決の仮説：テクノロジーで関心を再接続する</b>
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/61e4ee5d-90d3-4d57-a4af-898b309eea19" width="80%">
+  <br>
+  <b>4. システムアーキテクチャ：24時間監視の仕組み</b>
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/526c89ea-1270-449b-9af2-9c97750b9388" width="80%">
+  <br>
+  <b>5. 学習システム：科学を遊びに変えるクイズロジック</b>
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/51d6ed91-c827-43e1-9dba-395ea60fb6c9" width="80%">
+  <br>
+  <b>6. デモンストレーション：実稼働中の管理画面</b>
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ad3308d7-42d7-4731-a731-ed5394240ade" width="80%">
+  <br>
+  <b>7. 今後の展望：さらなる可視化とAI予測</b>
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/29a81811-cfaf-4943-86ca-3023af760cc0" width="80%">
+  <br>
+  <b>8. まとめ：深く知るための自動化へ</b>
+</p>
 
 ## 🛠 使用技術 (Tech Stack)
 
