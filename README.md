@@ -17,23 +17,7 @@
 
 ## 📸 Demo / 画面イメージ
 
-| 共有ダッシュボード | 環境グラフ |
-| --- | --- |
-| <img src="" alt="Dashboard Screenshot" width="400"> <br>
-
-<br> *現在環境とToDo、クイズへの導線* | <img src="" alt="Graph Screenshot" width="400"> <br>
-
-<br> *24時間/1週間の環境推移* |
-
-| 学習クイズ画面 | 3D地球儀ビュー |
-| --- | --- |
-| <img src="" alt="Quiz Screenshot" width="400"> <br>
-
-<br> *即時フィードバック付きのクイズ* | <img src="" alt="3D Earth Screenshot" width="400"> <br>
-
-<br> *React Three Fiberによる描画* |
-
----
+https://github.com/waruigi87/sprout-frontend/issues/1#issue-3761689826
 
 ## 🛠 使用技術 (Tech Stack)
 
